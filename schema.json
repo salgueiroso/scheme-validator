@@ -1,0 +1,16 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema",
+    "$id": "schema.json",
+    "title": "Esquema padrão",
+    "description": "Descrição qualquer",
+    "type":"object",
+    "properties": {
+        "Nome":{
+            "type": "integer",
+            "description":"Nome do usuario",
+            "markdownDescription": "# te",
+            "exclusiveMinimum": 0
+        }
+    },
+    "required": ["Nome"]
+}
