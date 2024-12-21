@@ -36,7 +36,8 @@ async function execute() {
         const valid = validate(data)
 
         if (!valid) {
-            throw new Error(validate.errors.map(e => `Propriedade "${e.propertyName || e.instancePath}" na referencia "${e.schemaPath}" do esquema viola a regra "${e.keyword}" com a mensagem "${e.message}"`).join("\n"))
+            const errMessage = validate.errors.map(e => `The "${e.propertyName || e.instancePath}" property in the "${e.schemaPath}" section of the schema violates the "${e.keyword}" with the following message: "${e.message}"`).join("\n")
+            throw new Error(errMessage)
         }
 
         return valid
