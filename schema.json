@@ -1,16 +1,17 @@
 {
-    "$schema": "https://json-schema.org/draft-07/schema",
-    "$id": "schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/salgueiroso/scheme-validator/refs/heads/master/schema.json",
     "title": "Esquema padrão",
     "description": "Descrição qualquer",
-    "type":"object",
+    "type": "object",
     "properties": {
-        "Nome":{
+        "Quantidade": {
             "type": "integer",
-            "description":"Nome do usuario",
-            "markdownDescription": "# te",
+            "description": "Quantidade do usuario",
             "exclusiveMinimum": 0
         }
     },
-    "required": ["Nome"]
+    "required": [
+        "Quantidade"
+    ]
 }
