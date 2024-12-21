@@ -12,11 +12,13 @@
   },
   "homepage": "https://github.com/salgueiroso/scheme-validator",
   "scripts": {
-    "dev": "nodemon . ./schema.json ./exemplo1.json"
+    "dev": "nodemon . ./schema.json ./exemplo1.json",
+    "test": "mocha"
   },
   "author": "Acacio Salgueiro",
   "license": "MIT",
   "devDependencies": {
+    "mocha": "^11.0.1",
     "nodemon": "^3.1.9"
   },
   "dependencies": {
